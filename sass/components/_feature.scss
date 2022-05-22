@@ -1,0 +1,109 @@
+.feature {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+  }
+}
+
+.feature__bg {
+  width: 100%;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: var(--main-margin);
+  padding: 25px;
+}
+
+.feature__icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.feature__title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--title-color);
+  margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+}
+
+.feature__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--first-color);
+}
+
+.feature__list {
+  margin-bottom: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+
+.feature__item {
+  margin-bottom: var(--main-margin);
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 30px);
+    margin-left: var(--main-margin);
+    margin-bottom: var(--main-margin);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 4 - 30px);
+  }
+}
+
+// .feature {
+//   padding-top: var(--main-padding);
+//   padding-bottom: var(--main-padding);
+// }
+
+// .feature__list {
+//   display: flex;
+//   margin-left: -30px;
+// }
+
+// .feature__item {
+//   flex-basis: calc(100% / 4 - 30px);
+//   margin-left: var(--main-margin);
+// }
+
+// /* .feature__item:not(:last-child) {
+//   margin-right: var(--main-margin);
+// } */
+
+// .feature__bg {
+//   justify-content: center;
+//   align-items: center;
+//   width: 270px;
+//   height: 120px;
+//   background: #f5f4fa;
+//   border-radius: 4px;
+//   margin-bottom: var(--main-margin);
+//   padding: 25px 100px;
+// }
+
+// .feature__title {
+//   font-size: 14px;
+//   line-height: 1.14;
+//   letter-spacing: 0.03em;
+//   text-transform: uppercase;
+//   color: var(--title-color);
+//   margin-bottom: 10px;
+// }
+
+// .feature__text {
+//   font-size: 14px;
+//   line-height: 1.71;
+//   letter-spacing: 0.03em;
+//   color: var(--first-color);
+// }

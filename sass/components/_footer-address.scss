@@ -2,6 +2,9 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+  @media screen and (min-width: 1200px) {
+    padding: 0;
+  }
 }
 
 .footer-address-tab {
@@ -11,44 +14,37 @@
   }
 }
 
-.footer-content .container {
+.footer-address-desk {
   @media screen and (min-width: 1200px) {
     display: flex;
+    align-items: baseline;
   }
 }
 
 .footer-address {
   text-align: center;
   @media screen and (min-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: left;
     margin-right: 70px;
   }
 }
 
 .logo__footer {
   margin-bottom: 20px;
-  // @media screen and (min-width: 1200px) {
-  //   display: inline-block;
-  //   margin-bottom: 93px;
-  // }
 }
 
 .logo--light {
   color: var(--second-color);
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 93px;
-  }
 }
 
 .address-list {
   margin-bottom: 60px;
   @media screen and (min-width: 1200px) {
-    margin-top: 20px;
+    margin-bottom: 0;
   }
 }
-
-// .address-list {
-//   margin-top: 20px;
-// }
 
 .address {
   font-style: normal;

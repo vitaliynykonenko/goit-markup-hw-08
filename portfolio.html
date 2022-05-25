@@ -25,6 +25,16 @@
         <a href="/" class="logo header__logo link"
           >Web<span class="header__logo--dark">Studio</span></a
         >
+        <button type="button" class="menu-open-btn">
+          <svg
+            class=""
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use href="./images/symbol-defs-big.svg#menu-open-btn"></use>
+          </svg>
+        </button>
         <nav class="navigation">
           <ul class="menu-list list">
             <li class="menu-list__item">
@@ -41,20 +51,99 @@
           </ul>
         </nav>
         <div class="connection">
-          <a class="connection__link link" href="malto:info@devstudio.com">
-            <svg class="connection__icon" width="14" height="10">
+          <a class="connection__link--tab link" href="malto:info@devstudio.com">
+            <svg class="connection__icon--tab" width="14" height="10">
               <use
                 href="./images/symbol-defs-big.svg#icon-tab-envelope"
               ></use></svg
             >info@devstudio.com
           </a>
-          <a class="connection__link link" href="tel:+380961111111"
-            ><svg class="connection__icon" width="10" height="14">
+          <a class="connection__link--tab link" href="tel:+380961111111"
+            ><svg class="connection__icon--tab" width="10" height="14">
               <use
                 href="./images/symbol-defs-big.svg#icon-tab-smartphone"
               ></use></svg
             >+38 096 111 11 11</a
           >
+          <a
+            class="connection__link--desk link"
+            href="malto:info@devstudio.com"
+          >
+            <svg class="connection__icon--desk" width="16" height="12">
+              <use href="./images/symbol-defs-big.svg#icon-envelope"></use></svg
+            >info@devstudio.com
+          </a>
+          <a class="connection__link--desk link" href="tel:+380961111111"
+            ><svg class="connection__icon--desk" width="10" height="16">
+              <use
+                href="./images/symbol-defs-big.svg#icon-smartphone"
+              ></use></svg
+            >+38 096 111 11 11</a
+          >
+        </div>
+
+        <div class="nav-mobile-menu is-hidden">
+          <div class="container">
+            <div class="menu-mob-top">
+              <button type="button" class="menu-close-btn">
+                <svg
+                  class=""
+                  width="40"
+                  height="40"
+                  aria-label="Переключатель мобильного меню"
+                >
+                  <use href="./images/symbol-defs-big.svg#menu-close-btn"></use>
+                </svg>
+              </button>
+
+              <div class="navigation-mobile">
+                <ul class="menu-mob-list list">
+                  <li class="menu-mob-item">
+                    <a class="menu-mob-link link" href="./index.html">Студия</a>
+                  </li>
+                  <li class="menu-mob-item">
+                    <a
+                      class="menu-mob-link link current"
+                      href="./portfolio.html"
+                      >Портфолио</a
+                    >
+                  </li>
+                  <li class="menu-mob-item">
+                    <a class="menu-mob-link link" href="/Контакты">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="menu-mob-bottom">
+              <div class="connection-mobile">
+                <a class="connection-mob link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+                <a class="connection-mail link" href="malto:info@devstudio.com">
+                  info@devstudio.com
+                </a>
+              </div>
+              <div class="social-mobile">
+                <ul class="social-mob-list list">
+                  <li class="social-mob-item">
+                    <a class="social-mob-link link" href="">Instagram</a>
+                    <span class="social-mob-line"></span>
+                  </li>
+                  <li class="social-mob-item">
+                    <a class="social-mob-link link" href="">Twitter</a>
+                    <span class="social-mob-line"></span>
+                  </li>
+                  <li class="social-mob-item">
+                    <a class="social-mob-link link" href="">Facebook</a>
+                    <span class="social-mob-line"></span>
+                  </li>
+                  <li class="social-mob-item">
+                    <a class="social-mob-link link" href="">LinkedIn</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -382,5 +471,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

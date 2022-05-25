@@ -32,9 +32,7 @@
             height="40"
             aria-label="Переключатель мобильного меню"
           >
-            <use
-              href="./images/symbol-defs-big.svg#menu-open-btn"
-            ></use>
+            <use href="./images/symbol-defs-big.svg#menu-open-btn"></use>
           </svg>
         </button>
         <nav class="navigation">
@@ -85,71 +83,71 @@
             >+38 096 111 11 11</a
           >
         </div>
-       </div>
-       
-        <div class="nav-mobile-menu is-hidden">
-          <div class="container">
-            <div class="menu-mob-top">
-             <button type="button" class="menu-close-btn">
-               <svg
-            class=""
-            width="40"
-            height="40"
-            aria-label="Переключатель мобильного меню"
-               >
-                <use
-              href="./images/symbol-defs-big.svg#menu-close-btn"
-                ></use>
-               </svg>
-             </button>
-             
-           <div class="navigation-mobile">
-            <ul class="menu-mob-list list">
-              <li class="menu-mob-item">
-                <a class="menu-mob-link link current" href="./index.html"
-                  >Студия</a
-                >
-              </li>
-              <li class="menu-mob-item">
-                <a class="menu-mob-link link" href="./portfolio.html"
-                  >Портфолио</a
-                >
-              </li>
-              <li class="menu-mob-item">
-                <a class="menu-mob-link link" href="/Контакты">Контакты</a>
-              </li>
-            </ul>
-           </div>
-           </div>
-           <div class="menu-mob-bottom">
-           <div class="connection-mobile">
-            <a class="connection-mob link" href="tel:+380961111111"
-              >+38 096 111 11 11</a>
-            <a class="connection-mail link" href="malto:info@devstudio.com">
-              info@devstudio.com
-            </a> 
-           </div>
-           <div class="social-mobile">
-            <ul class="social-mob-list list">
-              <li class="social-mob-item">
-                <a class="social-mob-link link" href="">Instagram</a> <span class="social-mob-line"></span>
-              </li>
-              <li class="social-mob-item">
-                <a class="social-mob-link link" href="">Twitter</a> <span class="social-mob-line"></span>
-              </li>
-              <li class="social-mob-item">
-                <a class="social-mob-link link" href="">Facebook</a> <span class="social-mob-line"></span>
-              </li>
-              <li class="social-mob-item">
-                <a class="social-mob-link link" href="">LinkedIn</a>
-              </li>
-            </ul>
-           </div>
-           </div>
+      </div>
+
+      <div class="nav-mobile-menu is-hidden">
+        <div class="container">
+          <div class="menu-mob-top">
+            <button type="button" class="menu-close-btn">
+              <svg
+                class=""
+                width="40"
+                height="40"
+                aria-label="Переключатель мобильного меню"
+              >
+                <use href="./images/symbol-defs-big.svg#menu-close-btn"></use>
+              </svg>
+            </button>
+
+            <div class="navigation-mobile">
+              <ul class="menu-mob-list list">
+                <li class="menu-mob-item">
+                  <a class="menu-mob-link link current" href="./index.html"
+                    >Студия</a
+                  >
+                </li>
+                <li class="menu-mob-item">
+                  <a class="menu-mob-link link" href="./portfolio.html"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="menu-mob-item">
+                  <a class="menu-mob-link link" href="/Контакты">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="menu-mob-bottom">
+            <div class="connection-mobile">
+              <a class="connection-mob link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+              <a class="connection-mail link" href="malto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </div>
+            <div class="social-mobile">
+              <ul class="social-mob-list list">
+                <li class="social-mob-item">
+                  <a class="social-mob-link link" href="">Instagram</a>
+                  <span class="social-mob-line"></span>
+                </li>
+                <li class="social-mob-item">
+                  <a class="social-mob-link link" href="">Twitter</a>
+                  <span class="social-mob-line"></span>
+                </li>
+                <li class="social-mob-item">
+                  <a class="social-mob-link link" href="">Facebook</a>
+                  <span class="social-mob-line"></span>
+                </li>
+                <li class="social-mob-item">
+                  <a class="social-mob-link link" href="">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-      
     </header>
 
     <!--Герой-->
@@ -227,30 +225,39 @@
           <ul class="about-list list">
             <li class="about-item">
               <p class="applications">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
-              <img
-                src="./images/image1.jpg"
-                alt="Написание кода"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/image1.jpg 1x, ./images/image1-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/image1.jpg" alt="Написание кода" />
+              </picture>
             </li>
             <li class="about-item">
               <p class="applications">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
-              <img
-                src="./images/image2.jpg"
-                alt="Разработка мобильного приложения"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/image2.jpg 1x, ./images/image2-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/image2.jpg"
+                  alt="Разработка мобильного приложения"
+                />
+              </picture>
             </li>
             <li class="about-item">
               <p class="applications">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
-              <img
-                src="./images/image3.jpg"
-                alt="Конечный результат приложения"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/image3.jpg 1x, ./images/image3-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/image3.jpg"
+                  alt="Конечный результат приложения"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -261,12 +268,27 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img
-                src="./images/imgigor.jpg"
-                alt="Игорь Демьяненнко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/imgigor.jpg 1x, ./images/imgigor-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/imgigor-tab.jpg    1x,
+                    ./images/imgigor-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/imgigor-mob.jpg    1x,
+                    ./images/imgigor-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/imgigor.jpg" alt="Игорь Демьяненнко" />
+              </picture>
               <div class="name-position">
                 <h3 class="team-name">Игорь Демьяненнко</h3>
                 <p lang="en" class="team-position">Product Designer</p>
@@ -308,12 +330,27 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                src="./images/imgolga.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/imgolga.jpg 1x, ./images/imgolga-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/imgolga-tab.jpg    1x,
+                    ./images/imgolga-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/imgolga-mob.jpg    1x,
+                    ./images/imgolga-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/imgolga.jpg" alt="Ольга Репина" />
+              </picture>
               <div class="name-position">
                 <h3 class="team-name">Ольга Репина</h3>
                 <p lang="en" class="team-position">Frontend Developer</p>
@@ -355,12 +392,30 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                src="./images/imgnikolay.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/imgnikolay.jpg    1x,
+                    ./images/imgnikolay-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/imgnikolay-tab.jpg    1x,
+                    ./images/imgnikolay-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/imgnikolay-mob.jpg    1x,
+                    ./images/imgnikolay-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/imgnikolay.jpg" alt="Николай Тарасов" />
+              </picture>
               <div class="name-position">
                 <h3 class="team-name">Николай Тарасов</h3>
                 <p lang="en" class="team-position">Marketing</p>
@@ -402,12 +457,30 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                src="./images/imgmikhail.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/imgmikhail.jpg    1x,
+                    ./images/imgmikhail-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/imgmikhail-tab.jpg    1x,
+                    ./images/imgmikhail-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/imgmikhail-mob.jpg    1x,
+                    ./images/imgmikhail-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/imgmikhail.jpg" alt="Михаил Ермаков" />
+              </picture>
               <div class="name-position">
                 <h3 class="team-name">Михаил Ермаков</h3>
                 <p lang="en" class="team-position">UI Designer</p>
@@ -672,6 +745,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

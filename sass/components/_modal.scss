@@ -61,6 +61,9 @@
   letter-spacing: 0.03em;
   color: var(--title-color);
   margin-bottom: 12px;
+  @media screen and (max-width: 1199px) {
+    line-height: 1.15;
+  }
 }
 
 .input-item {

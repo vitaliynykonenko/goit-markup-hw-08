@@ -2,6 +2,48 @@
   background-color: #2f303a;
   padding-top: 118px;
   padding-bottom: 118px;
+  @media screen and (min-width: 320px) {
+    background-color: #2f303a;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/img-bg-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    margin: 0 auto;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/img-bg-mob-2x.jpg);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    background-color: #2f303a;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/img-bg-tab.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    margin: 0 auto;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/img-bg-tab-2x.jpg);
+    }
+  }
   @media screen and (min-width: 1200px) {
     background-color: #2f303a;
     padding-top: 200px;
@@ -10,11 +52,20 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/img-bg.jpg);
+      url(../../images/img-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     max-width: 100%;
     margin: 0 auto;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/img-bg-2x.jpg);
+    }
   }
 }
 

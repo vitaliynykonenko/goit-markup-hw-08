@@ -147,7 +147,7 @@ img {
   color: var(--accent-color);
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .link.current::after {
     content: "";
     display: block;
@@ -275,6 +275,7 @@ img {
 
 .nav-mobile-menu {
   position: fixed;
+  height: 100%;
   z-index: 1;
   top: 0;
   left: 0;
@@ -289,7 +290,6 @@ img {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  height: 100%;
 }
 @media screen and (min-width: 768px) {
   .nav-mobile-menu {
@@ -404,18 +404,18 @@ img {
 }
 
 .hero {
+  display: block;
   background-color: #2f303a;
   padding-top: 118px;
   padding-bottom: 118px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  max-width: 100%;
 }
 @media screen and (min-width: 320px) {
   .hero {
-    background-color: #2f303a;
+    background-size: cover;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-bg-mob.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    max-width: 100%;
-    margin: 0 auto;
   }
 }
 @media screen and (min-width: 320px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (min-resolution: 2dppx) {
@@ -425,12 +425,8 @@ img {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-color: #2f303a;
+    background-size: cover;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-bg-tab.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    max-width: 100%;
-    margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -440,14 +436,10 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-color: #2f303a;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-size: cover;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    max-width: 100%;
-    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -457,7 +449,7 @@ img {
 }
 
 .hero__title {
-  width: 100%;
+  max-width: 360px;
   margin: 0 auto;
   font-weight: 900;
   font-size: 26px;
@@ -467,6 +459,14 @@ img {
   text-transform: uppercase;
   color: var(--second-color);
   margin-bottom: var(--main-margin);
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 696px;
+    margin-bottom: 30px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__btn {
@@ -620,6 +620,13 @@ img {
   color: var(--title-color);
   margin-bottom: var(--main-margin);
 }
+@media screen and (min-width: 1200px) {
+  .team-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
 
 .team {
   background-color: var(--main-background-color);
@@ -746,6 +753,13 @@ img {
   color: var(--title-color);
   margin-bottom: var(--main-margin);
 }
+@media screen and (min-width: 1200px) {
+  .clients-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
 
 .clients-list {
   display: flex;
@@ -869,6 +883,9 @@ img {
   color: var(--accent-color);
 }
 
+.contact-address:not(:last-child) {
+  margin-bottom: 8px;
+}
 @media screen and (min-width: 1200px) {
   .contact-address:not(:last-child) {
     margin-bottom: 9px;
@@ -1183,12 +1200,13 @@ img {
   letter-spacing: 0.03em;
   color: var(--second-color);
   height: 100%;
+  width: 100%;
   padding: 24px;
-  overflow-y: scroll;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .work-text-second {
     padding: 77px 24px 0 24px;
+    overflow-y: scroll;
   }
 }
 @media screen and (min-width: 768px) {

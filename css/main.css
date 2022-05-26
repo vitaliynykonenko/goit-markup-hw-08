@@ -1204,7 +1204,7 @@ img {
   width: 100%;
   padding: 24px;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .work-text-second {
     padding: 77px 24px 0 24px;
     overflow-y: scroll;

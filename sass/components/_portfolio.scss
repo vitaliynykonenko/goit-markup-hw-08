@@ -129,7 +129,7 @@
   height: 100%;
   width: 100%;
   padding: 24px;
-  @media screen and (min-width: 320px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     padding: 77px 24px 0 24px;
     overflow-y: scroll;
   }

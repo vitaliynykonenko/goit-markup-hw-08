@@ -286,6 +286,8 @@ img {
   padding-bottom: 48px;
 }
 .nav-mobile-menu .container {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -299,10 +301,6 @@ img {
 
 .menu-mob-top {
   width: 100%;
-}
-
-.menu-mob-list {
-  margin-bottom: 32px;
 }
 
 .menu-mob-link {
